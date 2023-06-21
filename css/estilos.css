@@ -15,6 +15,10 @@
   margin-top: 2em;
 }
 
+.hamburguesa{
+  display: none;
+}
+
 nav li {
   display: inline-block;
   text-align: center;
@@ -125,12 +129,21 @@ p {
 }
 
 .violeta h3 {
-  width: 20%;
+  width: 90%;
   font-size: 40px;
   line-height: 38px;
   letter-spacing: -0.005em;
   color: #ffffff;
 }
+
+.violeta h4{
+  width: 40%;
+  font-size: 40px;
+  line-height: 38px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+}
+
 
 .pro {
   font-size: 2em;
@@ -138,6 +151,12 @@ p {
 
 .texto {
   color: #ffffff;
+  display: block;
+}
+
+
+#parrafoCelulares{
+  display: none;
 }
 
 .informacion {
@@ -264,8 +283,7 @@ footer {
   margin: auto;
 }
 
-footer p {
-  width: 80%;
+footer p{
   padding-right: 30px;
   text-align: right;
 }
@@ -323,7 +341,7 @@ form {
   border-radius: 50px;
   color: #a0a0a0;
 }
-.Go {
+.go {
   border: none;
   display: flex;
   flex-direction: row;
@@ -349,4 +367,144 @@ input[type="submit"] {
   background-color: rgba(139, 72, 191, 1);
   color: white;
   cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+
+  .navegador button,
+  ul {
+    display: none;
+  }
+
+
+  .navegador {
+    flex-direction: row-reverse;
+  }
+  .hamburguesa {
+    display: flex;
+  }
+
+  .seccionPrincipal {
+    display: block;
+    text-align: right;
+    width: 90%;
+  }
+
+  .seccionPrincipal img {
+    width: 480px;
+  }
+
+  .more{
+    background-color: #8B48BF;
+  }
+
+  .violeta {
+    background-color: rgba(60, 221, 243, 1);
+    justify-content: center;
+  }
+
+  .violeta button{
+    background-color: #232C50;
+    color: white;
+  }
+
+  .violeta h3{
+    
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .violeta h4{
+    width: 70%;
+    line-height: 45px;
+    text-align: center;
+  }
+
+
+  .violeta p {
+    margin-top: 50px;
+    color: white;
+  }
+
+  .informacion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 90%;
+    justify-content: flex-end;
+  }
+
+  .info-h4 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(139, 72, 191, 0.3);
+  }
+
+  .informacion p {
+    margin-left: 15px;
+  }
+
+  .tenistas article:nth-child(2),
+  .tenistas article:nth-child(4) {
+    display: none;
+  }
+  .palabrasTenista {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .palabrasTenista h4 {
+    color: rgba(63, 72, 104, 1);
+  }
+
+  #parrafoPC{
+    display: none;
+  }
+
+  #parrafoCelulares{
+    display: block;
+  }
+
+  /* footer */
+
+  footer p {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenedorGeneral {
+    width: 90%;
+    margin: 0 auto 25px auto;
+    flex-direction: column-reverse;
+    gap: 35px;
+    align-items: center;
+  }
+
+  .redesSociales{
+    flex-direction: column;
+  }
+
+  .redes{
+    gap: 60px;
+  }
+
+  form {
+    width: 80%;
+  }
+  .lista {
+    width: 80%;
+  }
+
+  .lista li {
+    padding-left: 15px;
+  }
+
+
+
 }
